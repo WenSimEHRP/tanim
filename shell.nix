@@ -9,6 +9,5 @@ mkShell rec {
     typst
     ffmpeg
     parallel
-    inkscape
   ];
 }
