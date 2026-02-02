@@ -6,8 +6,12 @@ with pkgs;
 
 mkShell rec {
   nativeBuildInputs = [
-    typst
-    ffmpeg
-    parallel
+    typst     # renderer
+    ffmpeg    # compositor
+    parallel  # dispatcher
+    # OPTIONAL, only for downloading and extracting assets
+    curl      # asset fetcher
+    p7zip     # decompressor
+    yt-dlp    # music downloader
   ];
 }
